@@ -13,3 +13,6 @@ results/
 
 # OS
 .DS_Store
+docs/*.png
+!docs/cover.png
+ARTICLE-DRAFT.md
