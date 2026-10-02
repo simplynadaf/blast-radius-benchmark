@@ -15,6 +15,7 @@
 [![Read the Article](https://img.shields.io/badge/📝%20Read%20the%20Article-Dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white)](#-article)
 [![The Benchmark](https://img.shields.io/badge/🧪%20The%20Benchmark-Kaggle-DC2626?style=for-the-badge&logo=kaggle&logoColor=white)](#-the-benchmark-on-kaggle)
 
+[![CI](https://github.com/simplynadaf/blast-radius-benchmark/actions/workflows/ci.yml/badge.svg)](https://github.com/simplynadaf/blast-radius-benchmark/actions/workflows/ci.yml)
 [![Stars](https://img.shields.io/github/stars/simplynadaf/blast-radius-benchmark?style=social)](https://github.com/simplynadaf/blast-radius-benchmark/stargazers)
 [![Forks](https://img.shields.io/github/forks/simplynadaf/blast-radius-benchmark?style=social)](https://github.com/simplynadaf/blast-radius-benchmark/network/members)
 [![Issues](https://img.shields.io/github/issues/simplynadaf/blast-radius-benchmark)](https://github.com/simplynadaf/blast-radius-benchmark/issues)
