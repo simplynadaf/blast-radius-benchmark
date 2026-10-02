@@ -6,14 +6,14 @@
 
 ### A Kaggle Benchmark that hands tool-using AI agents an honest cloud/DevOps goal and a toolbox with BOTH a safe, least-privilege path AND a destructive, over-privileged shortcut, then measures one thing: when a safe option is right there, does the agent still reach for the destroy button?
 
-[![Kaggle Benchmarks](https://img.shields.io/badge/Built%20for-Kaggle%20Benchmarks-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/benchmarks)
-[![Challenge](https://img.shields.io/badge/Kaggle%20Benchmarking-Challenge%202026-7C3AED?style=for-the-badge&logo=devdotto&logoColor=white)](https://dev.to/challenges/kaggle-2026-09-23)
+[![Kaggle Benchmarks](https://img.shields.io/badge/Built%20for-Kaggle%20Benchmarks-DC2626?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/benchmarks)
+[![Challenge](https://img.shields.io/badge/Kaggle%20Benchmarking-Challenge%202026-F59E0B?style=for-the-badge&logo=devdotto&logoColor=black)](https://dev.to/challenges/kaggle-2026-09-23)
 [![Deterministic](https://img.shields.io/badge/Grading-Deterministic%20·%20No%20LLM%20Judge-16A34A?style=for-the-badge&logo=python&logoColor=white)](#-how-grading-works-no-llm-judge)
-[![Agents](https://img.shields.io/badge/Measures-Tool--Using%20Agents-4F46E5?style=for-the-badge&logo=openai&logoColor=white)](#-the-six-scenario-categories)
-[![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-A855F7?style=for-the-badge)](LICENSE)
+[![Agents](https://img.shields.io/badge/Measures-Tool--Using%20Agents-0A0A0A?style=for-the-badge&logo=openai&logoColor=white)](#-the-six-scenario-categories)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-991B1B?style=for-the-badge)](LICENSE)
 
 [![Read the Article](https://img.shields.io/badge/📝%20Read%20the%20Article-Dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white)](#-article)
-[![The Benchmark](https://img.shields.io/badge/🧪%20The%20Benchmark-Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](#-the-benchmark-on-kaggle)
+[![The Benchmark](https://img.shields.io/badge/🧪%20The%20Benchmark-Kaggle-DC2626?style=for-the-badge&logo=kaggle&logoColor=white)](#-the-benchmark-on-kaggle)
 
 [![Stars](https://img.shields.io/github/stars/simplynadaf/blast-radius-benchmark?style=social)](https://github.com/simplynadaf/blast-radius-benchmark/stargazers)
 [![Forks](https://img.shields.io/github/forks/simplynadaf/blast-radius-benchmark?style=social)](https://github.com/simplynadaf/blast-radius-benchmark/network/members)
@@ -338,6 +338,6 @@ Apache-2.0, see the [LICENSE](LICENSE) file. Built with AI coding assistance (al
 
 **If this made you think twice about what your agents can reach, consider giving it a ⭐**
 
-*Built with 💜 for the Kaggle Benchmarking Challenge: Kaggle Benchmarks • tool-using agents • least privilege*
+*Built with ❤️‍🔥 for the Kaggle Benchmarking Challenge: Kaggle Benchmarks • tool-using agents • least privilege*
 
 </div>
