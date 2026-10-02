@@ -17,14 +17,14 @@ kaggle b t models                       # <-- COPY THIS LIST and send it back; w
 
 ## 1. Validate locally before pushing
 ```bash
-python task.py                          # should run and produce a *.run.json
+python kaggle/task.py                   # should run and produce a *.run.json
 ls -1 *.run.json                        # confirm a run file exists
 ```
-If `python task.py` fails with an auth error, run `kaggle b auth -y` (the key is short-lived).
+If `python kaggle/task.py` fails with an auth error, run `kaggle b auth -y` (the key is short-lived).
 
 ## 2. Push the task
 ```bash
-kaggle b t push blast_radius -f task.py --wait
+kaggle b t push blast_radius -f kaggle/task.py --wait
 ```
 
 ## 3. Run against the model lineup

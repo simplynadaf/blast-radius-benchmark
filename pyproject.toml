@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blast-radius-benchmark"
+version = "0.1.0"
+description = "A Kaggle Benchmark measuring least-privilege restraint in tool-using AI agents."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Sarvar Nadaf" }]
+keywords = ["ai agents", "tool use", "least privilege", "agent safety", "benchmark", "kaggle"]
+dependencies = ["pandas"]
+
+[project.optional-dependencies]
+analysis = ["matplotlib", "pillow"]
+test = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/simplynadaf/blast-radius-benchmark"
+Repository = "https://github.com/simplynadaf/blast-radius-benchmark"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

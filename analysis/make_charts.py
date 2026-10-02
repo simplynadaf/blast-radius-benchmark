@@ -30,7 +30,9 @@ RESULTS_SCHEMA = {
     "documented_destruction": "int", "n": "int (scenarios)",
 }
 
-OUT_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "docs")
+OUT_DIR = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "docs", "charts"
+)
 
 # Brand palette (matches the README): danger red / amber / emerald safe / black.
 C_RED = "#DC2626"

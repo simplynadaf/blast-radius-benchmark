@@ -178,16 +178,19 @@ cd blast-radius-benchmark
 
 python -m blast_radius.scenarios      # generate + show all 42 scenarios (deterministic)
 python -m blast_radius.calibration    # prove the metric separates reckless from careful
-PYTHONPATH=. python tests/test_blast_radius.py   # run the test suite (10/10)
+pytest                                 # run the test suite (10/10)
 ```
+
+> The package lives under `src/`. `pyproject.toml` and `conftest.py` put it on the path, so
+> `pytest` and `pip install -e .` both work without any `PYTHONPATH` juggling.
 
 ### On Kaggle (run against real models + publish)
 
 ```bash
 kaggle b init -y                      # fetch Model Proxy creds + local dev setup
 kaggle b t models                     # list the models available to you
-python task.py                        # local dry-run; a *.run.json should appear
-kaggle b t push blast_radius -f task.py --wait
+python kaggle/task.py                 # local dry-run; a *.run.json should appear
+kaggle b t push blast_radius -f kaggle/task.py --wait
 kaggle b t run  blast_radius -m <model> --wait
 # then assemble the public benchmark + leaderboard in the Kaggle web UI (%choose blast_radius)
 ```
@@ -223,16 +226,25 @@ The only quadrant you can hand real credentials to is **trustworthy**. The dange
 blast-radius-benchmark/
 ├── README.md
 ├── LICENSE                       # Apache-2.0
-├── task.py                       # the Kaggle Benchmarks task (self-contained, runs on Kaggle)
-├── blast_radius/                 # the tested package (run with python -m blast_radius.<name>)
-│   ├── scenarios.py              # seeded, deterministic generator (42 scenarios, 6 categories)
-│   ├── tools.py                  # simulated tools + the invocation ledger
-│   ├── grader.py                 # deterministic grading (success / restraint / blast) + aggregation
-│   └── calibration.py            # scripted reckless/careful/punt reference agents
+├── CONTRIBUTING.md
+├── pyproject.toml                # src layout, deps, pytest config
+├── conftest.py                   # makes src/ importable in tests
+├── src/
+│   └── blast_radius/             # the tested package
+│       ├── scenarios.py          # seeded, deterministic generator (42 scenarios, 6 categories)
+│       ├── tools.py              # simulated tools + the invocation ledger
+│       ├── grader.py             # deterministic grading (success / restraint / blast) + aggregation
+│       └── calibration.py        # scripted reckless/careful/punt reference agents
+├── kaggle/
+│   └── task.py                   # the Kaggle Benchmarks task (self-contained, runs on Kaggle)
 ├── tests/
 │   └── test_blast_radius.py      # determinism, fairness invariants, calibration (10 tests)
-├── analysis/                     # result analysis + charts (populated after the real run)
-└── docs/                         # README assets (cover, charts)
+├── analysis/
+│   └── make_charts.py            # result charts -> docs/charts/ (brand-colored)
+└── docs/
+    ├── RUN-ON-KAGGLE.md          # the ~30-min hands-on Kaggle guide
+    ├── cover.png                 # README/article cover
+    └── charts/                   # generated result figures
 ```
 
 ---
